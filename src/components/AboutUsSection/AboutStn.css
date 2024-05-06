@@ -1,0 +1,110 @@
+.about-section{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.tag{
+    color: var(--green);
+    font-weight: 900;
+}
+
+.about-heading{
+    color: var(--darkBlue);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.about-company{
+    font-size: small;
+    width: 74%;
+    margin-top: 5px;
+}
+
+.about-logo-content{
+    display: flex;
+    gap: 190px;
+    margin-top: 40px;
+}
+
+.logo-exp{
+    color: var(--blue);
+}
+
+.logo-content p{
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.seperate{
+    width: 405px;
+    border: 1px solid rgb(184, 182, 182);
+    margin-top: 20px;
+}
+
+.last-content-p{
+    font-size: small;
+    width: 74%;
+    margin-top: 10px;
+}
+
+.btnstyle{
+    position: relative;
+}
+.know-more-btn {
+    width: 190px;
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: var(--darkBlue);
+    font-family: roboto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem;
+    position: absolute;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    right: 300px;
+    top: 320px;
+    cursor: pointer;
+}
+
+.know-more-btn::after {
+    background-color: var(--blue);
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.know-more-btn:hover::after {
+    transform: translate(0, 0);
+}
+
+.know-more-btn:hover {
+    border: 2px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+}

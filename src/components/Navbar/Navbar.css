@@ -1,0 +1,60 @@
+
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    transition: ease;
+}
+
+.navbar-heading{
+    display: flex;
+    gap: 14px;
+    padding: 10px;
+}
+
+.section-heading{
+    color:rgb(22, 75, 96);
+    cursor:pointer
+}
+
+.logo{
+    width: 70px;
+    height: 7%;
+    border-radius: 50%;
+}
+
+.navbar-btn{
+    padding: 10px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid rgb(27, 107, 147);
+    border-radius: 0.6em;
+    color: rgb(27, 107, 147);
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  
+    &:hover,
+    &:focus {
+      color: #fff;
+      outline: 0;
+    }
+}
+
+.btn {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(27, 107, 147) inset;
+    }
+}
