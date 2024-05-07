@@ -8,12 +8,45 @@
     margin-top: 60px;
 }
 
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left .company-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-left .company-logo img {
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.footer-left .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .footer-left,
 .footer-right {
     flex-basis: 45%; /* Adjust width as needed */
 }
 
 .social-links {
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -27,11 +60,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    gap: 100px;
 }
 
-.company-logo {
+.company-logo img{
     margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .contact-info p {
@@ -75,7 +112,7 @@ textarea {
   
 }
 
-button {
+.feedback-form button {
     background-color: var(--darkBlue);
     color: #fff;
     border: none;
@@ -84,11 +121,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.feedback-form button:hover {
     background-color: var(--darklightBlue);
 }
 
-
+.site-links{
+    margin-bottom: 70px;
+}
 .site-links a {
     margin: 0 10px;
     color: #fff;
