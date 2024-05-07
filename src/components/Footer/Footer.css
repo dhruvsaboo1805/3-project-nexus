@@ -1,0 +1,106 @@
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--darkBlue);
+    padding: 50px 20px;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 45%; /* Adjust width as needed */
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.company-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    margin-right: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback-form {
+    background-color: #E9E6E6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.feedback-form h3{
+    color: black;
+}
+
+.feedback-form:hover {
+    transform: translateY(-5px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E9E6E6;
+    border-radius: 5px;
+  
+}
+
+button {
+    background-color: var(--darkBlue);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--darklightBlue);
+}
+
+
+.site-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.site-links a:hover {
+    text-decoration: underline;
+}
+
+
+.contact-info p svg {
+    margin-right: 10px;
+}
