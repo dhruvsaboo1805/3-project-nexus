@@ -18,13 +18,15 @@ body {
   font-family: "Poppins", sans-serif; 
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #F5F5F5;
+}
+
+/* .App{
   width: 90%;
   height: 100vh;
   margin: 0 auto;
-}
+} */
 
-.App{
- 
-}
+
 
 

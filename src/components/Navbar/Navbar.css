@@ -2,8 +2,11 @@
 .navbar-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     transition: ease;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .navbar-heading{
