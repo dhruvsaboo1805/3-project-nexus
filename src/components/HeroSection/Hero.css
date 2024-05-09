@@ -10,15 +10,37 @@
     position: relative;
 }
 
-.hero-img img{
-    width: 100px;
-    height: 100px;
+.hero_img {
+    position: relative;
+    overflow: hidden; 
 }
+
+.hero-img img {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: -30px;
+    left: -80px;
+    animation: slideFromLeft 1.5s ease-in-out forwards; 
+    opacity: 0; 
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
 
 .content{
     width: 40%;
     position: absolute;
-    left: 700px;
+    left: 800px;
     top: 90px;
 }
 
