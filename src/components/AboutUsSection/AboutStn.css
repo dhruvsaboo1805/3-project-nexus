@@ -1,6 +1,6 @@
 .about-section{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .about-content{
@@ -58,16 +58,29 @@
     margin-top: 10px;
 }
 
+.right-content{
+    position: relative;
+}
+
+.about-img{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+
+.about-img img{
+    width: 700px;
+}
+
 .btnstyle{
     position: relative;
 }
 .know-more-btn {
-    width: 190px;
+    width: 150px;
     border: 2px solid currentColor;
-    border-radius: 3rem;
+    border-radius: 1rem;
     color: var(--darkBlue);
-    font-family: roboto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
     overflow: hidden;
     padding: 1rem;
@@ -76,14 +89,14 @@
     transition: 0.2s transform ease-in-out;
     will-change: transform;
     z-index: 0;
-    right: 300px;
-    top: 320px;
+    right: 100px;
+    top: 350px;
     cursor: pointer;
 }
 
 .know-more-btn::after {
     background-color: var(--blue);
-    border-radius: 3rem;
+    border-radius: 1rem;
     content: '';
     display: block;
     height: 100%;

@@ -26,21 +26,22 @@ const Services = () => {
                 </div>
             </div>
             <div className="customer-cards-below">
-                 {/* Additional card for number of customers */}
-                 <div className="service-card customer-card">
-                        <div className="card-box1">
-                            <h3>23K+</h3>
-                            <p>Discover how many satisfied customers we have served globally.</p>
-                        </div>
+                {/* Additional card for number of customers */}
+                <div className="service-card customer-card">
+                    <div className="card-box1">
+                        <h3>23K+ Happy Customers</h3>
+                        <p>Discover how many satisfied customers we have served globally.</p>
                     </div>
-                    {/* Additional card for number of countries */}
-                    <div className="service-card country-card">
-                        <div className="card-box1">
-                            <h3>10+</h3>
-                            <p>Explore the diverse range of countries where we have provided our services.</p>
-                        </div>
+                </div>
+                {/* Additional card for number of countries */}
+                <div className="service-card country-card">
+                    <div className="card-box1">
+                        <h3>10+ Countries</h3>
+                        <p>Explore the diverse range of countries where we have provided our services.</p>
                     </div>
+                </div>
             </div>
+
         </div>
     )
 }

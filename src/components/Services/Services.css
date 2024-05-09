@@ -35,40 +35,69 @@
     margin-top: 40px;
 }
 
-.customer-cards-below{
+.customer-cards-below {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .service-card {
-    width: 400px;
-    height: 150px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    z-index: 200;
-   
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
-.card-box1 {
+    width: calc(50% - 120px); /* Adjust width as needed */
     padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative; /* Add position relative to contain the overlay */
+    cursor: pointer;
+}
+
+.service-card:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.customer-card,
+.country-card {
+    background-color: #fff; /* Fallback color in case image fails to load */
+}
+
+.customer-card::before,
+.country-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 0, 0, 0.2);
+    backdrop-filter: blur(1px); 
 }
 
 .customer-card {
-    background-color: #FFD700;
+    background-image: url("../../assets/customers.png");
+    object-fit: cover;
 }
 
 .country-card {
-    background-color: #4CAF50;
+    background-image: url("../../assets/countries.png");
+    object-fit: contain;
 }
 
-.card h3 {
-    margin-top: 0;
+.card-box1 {
+    position: relative; /* Add position relative to contain the overlay */
+    z-index: 10; /* Ensure text appears above the overlay */
+    padding: 20px;
+}
+
+.card-box1 h3 {
+    font-size: 24px;
+    margin-bottom: 5px; /* Remove default margin */
+}
+
+.card-box1 p {
+    font-size: 15px;
+    font-weight: 600;
 }

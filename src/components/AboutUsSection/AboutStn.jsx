@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutStn.css";
 import { FaMedal } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
+import AboutUsImg from "../../assets/about-us-img.png";
 
 const AboutStn = () => {
     return (
@@ -37,7 +38,9 @@ const AboutStn = () => {
                 </div>
 
                 <div className="right-content">
-                    {/* // logo */}
+                    <div className="about-img">
+                        <img src={AboutUsImg} alt="" />
+                    </div>
                     <div className="btnstyle">
                         <button className="know-more-btn ">Know More</button>
                     </div>

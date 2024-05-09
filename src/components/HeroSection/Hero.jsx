@@ -1,12 +1,12 @@
 import React from "react";
 import "./Hero.css";
-import logo from '../../assets/company_logo.png';
+import hero_img from "../../assets/hero-imgae.jpg";
 const Hero = () => {
     return(
         <div className="hero">
             <div className="hero-content">
                 <div className="hero-img">
-                    {/* <img src={logo} alt="" /> */}
+                    <img src={hero_img} alt="" className=""/>
                 </div>
                 <div className="content">
                     <div className="main-content">

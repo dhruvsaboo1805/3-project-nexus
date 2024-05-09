@@ -7,7 +7,7 @@ import company_logo from "../../assets/company_logo.png";
 
 const Footer = () => {
     return (
-        <>
+        <div className="footer-wrapper">
             <div className="footer-section">
                 <div className="footer-left">
                     <div className="site-links">
@@ -52,15 +52,13 @@ const Footer = () => {
                             <button type="submit">Submit</button>
                         </form>
                     </div>
-
                 </div>
-
             </div>
             <div className="copyright">
                 <hr />
-                <p><FaRegCopyright /> 2024 Your Company. All Rights Reserved.</p>
+                <p><FaRegCopyright /> 2024 Techy Software. All Rights Reserved.</p>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -10,6 +10,11 @@
     position: relative;
 }
 
+.hero-img img{
+    width: 100px;
+    height: 100px;
+}
+
 .content{
     width: 40%;
     position: absolute;

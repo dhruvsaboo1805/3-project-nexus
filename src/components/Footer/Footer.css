@@ -1,3 +1,7 @@
+.footer-wrapper {
+    position: relative;
+}
+
 .footer-section {
     display: flex;
     justify-content: space-between;
@@ -6,6 +10,7 @@
     padding: 50px 20px;
     color: #fff;
     margin-top: 60px;
+    height: 100vh;
 }
 
 .footer-left {
@@ -83,6 +88,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    z-index: 10;
 }
 .feedback-form h3{
     color: black;
@@ -142,4 +148,21 @@ textarea {
 
 .contact-info p svg {
     margin-right: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--darkBlue);
+    color: #fff;
+    text-align: center;
 }
