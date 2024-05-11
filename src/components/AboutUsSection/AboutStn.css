@@ -65,7 +65,20 @@
 .about-img{
     position: absolute;
     top: -40px;
-    right: -40px;
+    right: -1px;
+    animation: slideFromRight 1.5s ease-in-out forwards; 
+    opacity: 0; 
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
 }
 
 .about-img img{

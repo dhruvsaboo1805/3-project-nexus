@@ -17,10 +17,10 @@
 
 .hero-img img {
     position: absolute;
-    width: 900px;
+    width: 800px;
     height: 500px;
-    top: -30px;
-    left: -80px;
+    top: -15px;
+    left: -35px;
     animation: slideFromLeft 1.5s ease-in-out forwards; 
     opacity: 0; 
 }
@@ -40,7 +40,7 @@
 .content{
     width: 40%;
     position: absolute;
-    left: 800px;
+    left: 810px;
     top: 90px;
 }
 

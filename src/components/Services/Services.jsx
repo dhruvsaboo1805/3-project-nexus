@@ -18,7 +18,7 @@ const Services = () => {
                         <Card
                             key={service.id}
                             title={service.title}
-                            body={service.body}
+                            description={service.body}
                             image={service.image}
                             id={service.id}
                         />

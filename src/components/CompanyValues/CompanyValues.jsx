@@ -20,7 +20,7 @@ const CompanyValues = () => {
                         <Card
                             key={value.id}
                             title={value.title}
-                            body={value.description}
+                            description={value.description}
                             image={value.image}
                             id={value.id}
                         />

@@ -1,0 +1,58 @@
+.card {
+    margin-bottom: 40px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .card-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  
+  .card-content {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-content {
+    transform: translateY(-5px);
+  }
+  
+  .card:nth-child(odd) {
+    background-color: #f0f0f0; /* Light gray background for odd cards */
+  }
+  
+  .card:nth-child(even) {
+    background-color: #ddd; /* Lighter gray background for even cards */
+  }
+
+  .card:nth-child(odd):hover {
+    background-color: #ddd;
+  }
+  
+  /* Change background color of even cards on hover */
+  .card:nth-child(even):hover {
+    background-color: #f0f0f0;
+  }
+ 
+  
+  .card:nth-child(4n+1),
+  .card:nth-child(4n+3) {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .card:nth-child(4n+1),
+  .card:nth-child(4n+2) {
+    order: 1;
+  }
+  
+  .card:nth-child(4n+3),
+  .card:nth-child(4n+4) {
+    order: 2;
+  }
+  
