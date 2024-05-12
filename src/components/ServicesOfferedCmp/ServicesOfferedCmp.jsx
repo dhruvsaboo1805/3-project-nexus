@@ -8,7 +8,7 @@ const ServicesOfferedCmp = () => {
         <div className="services-offer-section">
             <div className="headings-container">
                 <h2 className="offer-section-heading">Glimpse of Our Services</h2>
-                <h3 className="offer-sub-heading">Explore possibilities with Techy Software’s services—transforming businesses online and providing tailored solutions for digital success.</h3>
+                <h3 className="offer-sub-heading">Explore possibilities with Techy Software’s services—transforming <br />businesses online and providing tailored solutions for digital success.</h3>
             </div>
             <div className="offer-services-list">
                 {ServiceOffered.map((service) => (

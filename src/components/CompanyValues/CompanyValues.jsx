@@ -3,7 +3,7 @@ import "./CompanyValues.css";
 import companyValues from "../../companyValues";
 import Card from "../Card/Card";
 
-const CompanyValues = () => {
+const CompanyValues = ({forHomePage}) => {
     return (
         <div className="company-values-section">
             <div className="company-values-content">
@@ -23,6 +23,7 @@ const CompanyValues = () => {
                             description={value.description}
                             image={value.image}
                             id={value.id}
+                            forHomePage = {forHomePage}
                         />
                     ))}
                 </div>

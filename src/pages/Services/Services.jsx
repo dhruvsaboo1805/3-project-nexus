@@ -4,6 +4,8 @@ import Hero_services from '../../components/HeroSection/Hero_services'
 import servicesData2 from "../../serviceData2";
 import "./Services.css"
 import ServicesOfferedCmp from '../../components/ServicesOfferedCmp/ServicesOfferedCmp';
+import TechStacks from '../../components/TechStacks/TechStacks';
+import Footer from "../../components/Footer/Footer";
 
 const Services = () => {
     return (
@@ -25,6 +27,8 @@ const Services = () => {
                 </div>
             </div>
             <ServicesOfferedCmp></ServicesOfferedCmp>
+            <TechStacks></TechStacks>
+            <Footer></Footer>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import "./Services.css";
 import servicesData from '../../serviceData';
 import Card from "../Card/Card";
 
-const Services = () => {
+const Services = ({forHomePage}) => {
     return (
         <div className="service-section">
             <div className="service-content">
@@ -21,6 +21,7 @@ const Services = () => {
                             description={service.body}
                             image={service.image}
                             id={service.id}
+                            forHomePage = {forHomePage}
                         />
                     ))}
                 </div>
