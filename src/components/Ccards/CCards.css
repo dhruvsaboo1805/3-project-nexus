@@ -1,7 +1,8 @@
-.card {
+.card-cmp {
     margin-bottom: 40px;
     position: relative;
     padding: 10px;
+    border-radius: 20px;
   }
   
   .card-icon {
@@ -18,41 +19,41 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .card:hover .card-content {
+  .card-cmp:hover .card-content {
     transform: translateY(-5px);
   }
   
-  .card:nth-child(odd) {
+  .card-cmp:nth-child(odd) {
     background-color: #f0f0f0; /* Light gray background for odd cards */
   }
   
-  .card:nth-child(even) {
+  .card-cmp:nth-child(even) {
     background-color: #ddd; /* Lighter gray background for even cards */
   }
 
-  .card:nth-child(odd):hover {
+  .card-cmp:nth-child(odd):hover {
     background-color: #ddd;
   }
   
   /* Change background color of even cards on hover */
-  .card:nth-child(even):hover {
+  .card-cmp:nth-child(even):hover {
     background-color: #f0f0f0;
   }
  
   
-  .card:nth-child(4n+1),
-  .card:nth-child(4n+3) {
+  .card-cmp:nth-child(4n+1),
+  .card-cmp:nth-child(4n+3) {
     margin-top: 40px;
     margin-bottom: 10px;
   }
   
-  .card:nth-child(4n+1),
-  .card:nth-child(4n+2) {
+  .card-cmp:nth-child(4n+1),
+  .card-cmp:nth-child(4n+2) {
     order: 1;
   }
   
-  .card:nth-child(4n+3),
-  .card:nth-child(4n+4) {
+  .card-cmp:nth-child(4n+3),
+  .card-cmp:nth-child(4n+4) {
     order: 2;
   }
   

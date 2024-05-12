@@ -3,6 +3,7 @@ import qulaity_icon from "./assets/quality-icon.png";
 import innovation_icon from "./assets/innovation_image.png";
 import pucnctuality_icon from "./assets/punctuality-icon.png";
 
+
 const companyData = [
       {
         "id": 101,
@@ -29,5 +30,6 @@ const companyData = [
         "icon": pucnctuality_icon,
       }
     ]
+
 
 export default companyData;
