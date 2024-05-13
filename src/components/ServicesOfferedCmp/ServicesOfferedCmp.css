@@ -15,6 +15,7 @@
   .offer-section-heading {
     font-size: 40px;
     font-weight: bold;
+    color: var(--darkBlue);
   }
   
   .offer-sub-heading {

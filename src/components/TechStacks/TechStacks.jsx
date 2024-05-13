@@ -10,7 +10,7 @@ import Docker from "../../assets/Docker.svg";
 import MongoDB from "../../assets/MongoDB.svg";
 import Saas from "../../assets/Saas.svg";
 import React_icon from "../../assets/React.png";
-import angular from "../../assets/angular.png";
+import angular from "../../assets/Angular.png";
 import aws from "../../assets/aws.png";
 import dotNet from "../../assets/dotNet.jpeg";
 
@@ -18,9 +18,9 @@ import dotNet from "../../assets/dotNet.jpeg";
 const TechStacks = () => {
     return (
         <div className="tech-stack-section">
-          <div className="section-heading-techstack">Tech Stack</div>
+          <div className="section-heading-techstack">Technology Stack</div>
           <div className="sub-heading-techstack">
-            We approach every project with a carefully selected platform/technology and assign an appropriate team of designers, solutions specialists, developers, and testers. Here are some of the technologies and platforms we excel at:
+            We approach every project with a carefully selected platform/technology and assign an <br />appropriate team of designers, solutions specialists, developers, and testers. <br />Here are some of the technologies and platforms we excel at:
           </div>
           <div className="animated-icon"> {/* Add animation to this div */}
             <img src={React_icon} alt="Tech Stack Icon" />

@@ -10,16 +10,33 @@
     position: relative;
 }
 
+.main-content-contact{
+    font-size: 28px;
+    color: var(--darkBlue);
+}
+
+.main-content-3-contact{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 .hero_img {
     position: relative;
     overflow: hidden; 
 }
 
+.hero-img-contact img{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 20px;
+    left: 100px;
+}
 .hero-img img {
     position: absolute;
     width: 800px;
     height: 500px;
-    top: -15px;
+    top: -25px;
     left: -35px;
     animation: slideFromLeft 1.5s ease-in-out forwards; 
     opacity: 0; 
@@ -40,8 +57,8 @@
 .content{
     width: 40%;
     position: absolute;
-    left: 810px;
-    top: 90px;
+    left: 820px;
+    top: 100px;
 }
 
 .main-content{
