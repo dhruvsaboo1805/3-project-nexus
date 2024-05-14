@@ -11,16 +11,16 @@ import { toast } from "react-toastify";
 const Footer = () => {
 
     const form = useRef();
-    const service_id = process.env.REACT_APP_SERVICE_ID;
-    const public_id = process.env.REACT_APP_PUBLIC_ID;
-    const feedback_template_id = process.env.REACT_APP_FEEDBACK_TEMPLATE_ID;
-    // console.log(process.env);
+    // probel on process.env
+    // const service_id = process.env.REACT_APP_SERVICE_ID;
+    // const public_id = process.env.REACT_APP_PUBLIC_ID;
+    // const feedback_template_id = process.env.REACT_APP_FEEDBACK_TEMPLATE_ID;
 
     const handleFeedbackSumbit = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm(service_id, feedback_template_id, form.current, {
-                publicKey: public_id,
+            .sendForm('service_ttvw8si', 'template_ktc2yqg', form.current, {
+                publicKey: 'nP2m46ScHPCwe9_fi',
             })
             .then(
                 () => {

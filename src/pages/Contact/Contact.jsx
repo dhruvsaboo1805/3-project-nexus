@@ -8,19 +8,20 @@ import { toast } from "react-toastify";
 
 const Contact = () => {
     const [isContactPage, setContactPage] = useState(true);
-    const service_id = process.env.REACT_APP_SERVICE_ID;
-    const public_id = process.env.REACT_APP_PUBLIC_ID;
-    const contact_template_id = process.env.REACT_APP_CONTACT_US_TEMPLATE_ID;
+
+    // const service_id = process.env.REACT_APP_SERVICE_ID;
+    // const public_id = process.env.REACT_APP_PUBLIC_ID;
+    // const contact_template_id = process.env.REACT_APP_CONTACT_US_TEMPLATE_ID;
     // console.log(process.env);
-    console.log(process.config.env.REACT_APP_NAME);
+    // console.log(process.env);
 
     const form = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm(service_id, contact_template_id, form.current, {
-                publicKey: public_id,
+            .sendForm('service_ttvw8si', 'template_deno9xg', form.current, {
+                publicKey: 'nP2m46ScHPCwe9_fi',
             })
             .then(
                 () => {

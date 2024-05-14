@@ -7,12 +7,14 @@ import Services from "../../components/Services/Services";
 import CompanyValues from '../../components/CompanyValues/CompanyValues';
 import Testimonial from '../../components/TestimonialSection/Testimonial';
 import Footer from '../../components/Footer/Footer';
+import { CSSTransition } from 'react-transition-group';
 
 const Home = () => {
   const [isHomePage , setHomePage] = useState(true);
 
   return (
-    <div>
+    <CSSTransition in={true} appear={true} classNames="fade" timeout={300}>
+    <div className='main-content-home'>
       <Navbar></Navbar>
       <Hero></Hero>
       <AboutStn></AboutStn>
@@ -21,6 +23,7 @@ const Home = () => {
       <Testimonial></Testimonial>
       <Footer></Footer>
     </div>
+    </CSSTransition>
   )
 }
 

@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="hero">
             <div className="hero-content">
                 <div className="hero-img">
-                    <img src={hero_img} alt="" className=""/>
+                    <img src={hero_img} alt="" className="hero-img-img"/>
                 </div>
                 <div className="content">
                     <div className="main-content">
