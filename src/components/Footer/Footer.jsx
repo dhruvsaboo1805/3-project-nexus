@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 const Footer = () => {
 
     const form = useRef();
-    // probel on process.env
+    // problem on process.env
     // const service_id = process.env.REACT_APP_SERVICE_ID;
     // const public_id = process.env.REACT_APP_PUBLIC_ID;
     // const feedback_template_id = process.env.REACT_APP_FEEDBACK_TEMPLATE_ID;

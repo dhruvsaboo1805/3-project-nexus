@@ -4,6 +4,7 @@ import Aboutus from './pages/AboutUs/Aboutus';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import './App.css';
+import './index.css';
 
 function App() {
   return (

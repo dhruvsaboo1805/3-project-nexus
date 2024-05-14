@@ -1,41 +1,55 @@
-.company-values-section{
-    margin-top: 140px;
+.company-values-section {
+	margin-top: 140px;
 }
 
-.company-values-content{
-    display: flex;
-    flex-direction: column;
+.company-values-content {
+	display: flex;
+	flex-direction: column;
 }
 
-.values-headings{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-}
-.company-values-heading{
-    font-size: 15px;
-    color: var(--green);
-    font-weight: 700;
+.values-headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
 }
 
-.company-values-main-heading{
-    color: var(--darkBlue);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 5px;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+.company-values-heading {
+	font-size: 15px;
+	color: var(--green);
+	font-weight: 700;
 }
-.company-values-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 
+.company-values-main-heading {
+	color: var(--darkBlue);
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 5px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+.company-values-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.6rem;
 }
 
 .card {
-    width: calc(33.33% - 30px); /* Adjust the width as needed */
-    margin: 5px; /* Adjust margin as needed */
+	width: clamp(250px, 30%, 100%);
+	margin: 5px; /* Adjust margin as needed */
+}
+
+@media screen and (min-width : 760px) and (max-width: 900px)
+{
+	.company-values-section {
+		margin-top: 220px;
+	}
+}
+
+@media screen and (max-width: 760px)
+{
+	.company-values-section {
+		margin-top: 100px;
+	}
 }

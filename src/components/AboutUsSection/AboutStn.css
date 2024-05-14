@@ -1,136 +1,152 @@
-.about-section{
-    width: 100%;
-    margin-top: 40px;
+.about-section {
+	width: 100%;
+	margin-top: 40px;
 }
 
-.about-content{
-    display: flex;
-    justify-content: space-between;
+.about-content {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 1rem 1.3rem;
 }
 
-.left-content{
-    width: 50%;
-    margin-left: 50px;
+.left-content {
+	width: 50%;
 }
 
-.tag{
-    color: var(--green);
-    font-weight: 900;
+.tag {
+	color: var(--green);
+	font-weight: 900;
 }
 
-.about-heading{
-    color: var(--darkBlue);
-    font-weight: 600;
-    font-size: 30px;
-    margin-top: 5px;
+.about-heading {
+	color: var(--darkBlue);
+	font-weight: 600;
+	font-size: 30px;
+	margin-top: 5px;
 }
 
-.about-company{
-    font-size: small;
-    width: 74%;
-    margin-top: 5px;
+.about-company {
+	font-size: small;
+	width: 74%;
+	margin-top: 5px;
 }
 
-.about-logo-content{
-    display: flex;
-    gap: 190px;
-    margin-top: 40px;
+.about-logo-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
 }
 
-.logo-exp{
-    color: var(--blue);
+.logo-exp {
+	color: var(--blue);
 }
 
-.logo-content p{
-    font-weight: 600;
-    margin-top: 7px;
+.logo-content p {
+	font-weight: 600;
+	margin-top: 7px;
 }
 
-.seperate{
-    width: 405px;
-    border: 1px solid rgb(184, 182, 182);
-    margin-top: 20px;
+.seperate {
+	width: 100%;
+	border: 1px solid rgb(184, 182, 182);
+	margin-top: 20px;
 }
 
-.last-content-p{
-    font-size: small;
-    width: 74%;
-    margin-top: 10px;
+.last-content-p {
+	font-size: small;
+	width: 74%;
+	margin-top: 10px;
 }
 
-.right-content{
-    position: relative;
+.right-content {
+	width: 50%;
 }
 
-.about-img{
-    position: absolute;
-    top: -40px;
-    right: -1px;
-    animation: slideFromRight 1.5s ease-in-out forwards; 
-    opacity: 0; 
+.about-img {
+	width: 100%;
+	animation: slideFromRight 1.5s ease-in-out forwards;
+	opacity: 0;
 }
 
 @keyframes slideFromRight {
-    0% {
-        transform: translateX(100%); 
-        opacity: 0; 
-    }
-    100% {
-        transform: translateX(0); 
-        opacity: 1; 
-    }
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
-.about-img img{
-    width: 700px;
+.about-img img {
+	width: 100%;
 }
 
-.btnstyle{
-    position: relative;
+.btnstyle {
+	position: relative;
 }
 .know-more-btn {
-    width: 150px;
-    border: 2px solid currentColor;
-    border-radius: 1rem;
-    color: var(--darkBlue);
-    font-size: 1.2rem;
-    font-weight: 100;
-    overflow: hidden;
-    padding: 1rem;
-    position: absolute;
-    text-decoration: none;
-    transition: 0.2s transform ease-in-out;
-    will-change: transform;
-    z-index: 0;
-    right: 100px;
-    top: 350px;
-    cursor: pointer;
+	width: 150px;
+	border: 2px solid currentColor;
+	border-radius: 1rem;
+	color: var(--darkBlue);
+	font-size: 1.2rem;
+	font-weight: 100;
+	overflow: hidden;
+	padding: 1rem;
+	position: absolute;
+	text-decoration: none;
+	transition: 0.2s transform ease-in-out;
+	will-change: transform;
+	z-index: 0;
+	right: 100px;
+	top: -80px;
+	cursor: pointer;
 }
 
 .know-more-btn::after {
-    background-color: var(--blue);
-    border-radius: 1rem;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: 0.2s transform ease-out;
-    will-change: transform;
-    z-index: -1;
+	background-color: var(--blue);
+	border-radius: 1rem;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(-100%, 0) rotate(10deg);
+	transform-origin: top left;
+	transition: 0.2s transform ease-out;
+	will-change: transform;
+	z-index: -1;
 }
 
 .know-more-btn:hover::after {
-    transform: translate(0, 0);
+	transform: translate(0, 0);
 }
 
 .know-more-btn:hover {
-    border: 2px solid transparent;
-    color: white;
-    transform: scale(1.05);
-    will-change: transform;
+	border: 2px solid transparent;
+	color: white;
+	transform: scale(1.05);
+	will-change: transform;
+}
+
+@media (max-width: 768px) {
+	.about-section {
+		margin-top: 0;
+	}
+	.about-content {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.right-content {
+		width: 100%;
+	}
+	.know-more-btn{
+		display: none;
+	}
 }
