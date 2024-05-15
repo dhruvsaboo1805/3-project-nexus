@@ -5,7 +5,7 @@ const Hero_services = () => {
         <div className="hero">
             <div className="hero-content">
                 <div className="hero-img">
-                    <img src={ hero_Service_img} alt="" className="" />
+                    <img src={ hero_Service_img} alt="" className="hero_img_services" />
                 </div>
                 <div className="content">
                     <div className="main-content">

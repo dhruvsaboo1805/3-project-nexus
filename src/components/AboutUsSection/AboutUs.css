@@ -1,13 +1,42 @@
 .about-section{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .left-content-about-us-page{
-    margin-top: 70px;
+    margin-top: 10px;
     margin-left: 100px;
 }
 
 .about-company-about-us{
     margin-top: 10px;
-    width: 400px;
+    width: 50%;
+}
+
+.about-img{
+    width: 34rem;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px)
+{
+    .about-section{
+        margin-top: 40px;
+    }
+
+    .left-content-about-us-page{
+        margin-top: 30px;
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+    
+    .about-img img{
+        width: 100%;
+    }
 }

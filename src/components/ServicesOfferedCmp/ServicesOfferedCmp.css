@@ -30,4 +30,15 @@
     justify-content: center;
     gap: 20px;
   }
+
+  @media screen and (max-width : 900px)
+  {
+    .offer-section-heading {
+      font-size: 30px;
+    }
+    
+    .offer-sub-heading {
+      font-size: 20px;
+    }
+  }
  

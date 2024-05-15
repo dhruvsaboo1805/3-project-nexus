@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/">
           <img src={logo} alt="" className='logo' />
         </Link>
-        <div className='navbar-heading'>
+        <div className='navbar-heading '>
           <Link to="/" >
             <p className='section-heading'>Home</p>
           </Link>

@@ -5,7 +5,7 @@ import "./CmpCards.css";
 
 const CmpCards = () => {
     return (
-        <>
+        <div className='cmp-cards-section-about-page'>
             <div className="cmp-cards-heading">
                 <h2>Journey of Techy Software</h2>
             </div>
@@ -16,7 +16,7 @@ const CmpCards = () => {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
