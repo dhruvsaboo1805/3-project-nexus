@@ -1,48 +1,56 @@
+/* General Styles */
+.nav {
+  width: 100%;
+  background-color: #F5F5F5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
-  transition: ease;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 20px;
+  padding: 10px 20px;
 }
 
-.section-heading:hover {
-  color: red
-}
-
-.navbar-heading {
+.logo-link {
   display: flex;
-  gap: 14px;
-  padding: 10px;
+  align-items: center;
 }
-
-.navbar-heading a {
-  text-decoration: none;
-}
-
-.section-heading {
-  font-size: 20px;
-  color: rgb(22, 75, 96);
-  cursor: pointer;
-}
-
 
 .logo {
-  width: 70px;
+  width: 55px;
   height: auto;
   border-radius: 50%;
 }
 
-.navbar-btn {
-  padding: 10px;
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--darkBlue);
 }
 
-.navbar-btn a {
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  margin-left: 20px;
   text-decoration: none;
-  color: inherit;
+}
+
+.section-heading {
+  margin: 0;
+  font-size: 18px;
+  color: var(--darkBlue);
+}
+
+.section-heading:hover{
+  color: var(--blue);
 }
 
 
@@ -79,53 +87,37 @@
 }
 
 
-@media only screen and (max-width: 1023px) {
-  .navbar-section {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .logo {
-    width: 50px;
-  }
-
-  .navbar-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
-
-  .navbar-heading.show {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .section-heading {
-    font-size: 18px;
-  }
-
-
-  .navbar-btn button {
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .menu-toggle {
     display: block;
   }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    gap: 0.1rem;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .btn {
+    margin:0 auto;
+  }
 }
-
-
