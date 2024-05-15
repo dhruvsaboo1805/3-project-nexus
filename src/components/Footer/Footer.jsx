@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "./Footer.css";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaLocationDot } from "react-icons/fa6";
@@ -7,6 +7,8 @@ import company_logo from "../../assets/company_logo.png";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import { NavLink } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const Footer = () => {
 
@@ -33,17 +35,26 @@ const Footer = () => {
                     toast.error("Something Went Wrong");
                 },
             );
-            e.target.reset();
+        e.target.reset();
     }
     return (
         <div className="footer-wrapper">
             <div className="footer-section">
                 <div className="footer-left">
+                    <ScrollToTop></ScrollToTop>
                     <div className="site-links">
-                        <a href="/">Home</a>
-                        <a href="/services">Services</a>
-                        <a href="/about">About Us</a>
-                        <a href="/contact">Contact Us</a>
+                        <NavLink to="/">
+                            <p>Home</p>
+                        </NavLink>
+                        <NavLink to="/about-us">
+                            <p>Services</p>
+                        </NavLink>
+                        <NavLink to="/services">
+                            <p>About Us</p>
+                        </NavLink>
+                        <NavLink to="/contact">
+                            <p>Contact Us</p>
+                        </NavLink>
                     </div>
                     <div className="company-details">
                         <div className="company-logo">

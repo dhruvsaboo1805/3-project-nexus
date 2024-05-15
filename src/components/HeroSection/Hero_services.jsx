@@ -1,5 +1,7 @@
 import React from 'react'
 import hero_Service_img from "../../assets/services-hero_img.png";
+import "./Hero.css";
+
 const Hero_services = () => {
     return (
         <div className="hero">

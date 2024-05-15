@@ -3,6 +3,7 @@ import "./AboutStn.css";
 import { FaMedal } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 import AboutUsImg from "../../assets/about-us-img.png";
+import { NavLink } from "react-router-dom";
 
 const AboutStn = () => {
     return (
@@ -42,7 +43,9 @@ const AboutStn = () => {
                         <img src={AboutUsImg} alt="" />
                     </div>
                     <div className="btnstyle">
-                        <button className="know-more-btn ">Know More</button>
+                        <NavLink to = "/about-us">
+                            <button className="know-more-btn ">Know More</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

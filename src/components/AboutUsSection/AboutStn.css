@@ -35,6 +35,10 @@
 	margin-top: 5px;
 }
 
+.about-company p{
+	font-size: 15px;
+}
+
 .about-logo-content {
 	display: flex;
 	justify-content: space-between;
@@ -57,7 +61,7 @@
 }
 
 .last-content-p {
-	font-size: small;
+	font-size: 15px;
 	width: 74%;
 	margin-top: 10px;
 }
