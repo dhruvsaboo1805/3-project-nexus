@@ -7,7 +7,7 @@ const Card = ({ title, description, image, id, forHomePage }) => {
     const cardRef = useGSAP((element) => {
         gsap.fromTo(element, 
             { opacity: 0, y: 50 }, 
-            { opacity: 1, y: 0, duration: 1, scrollTrigger: {
+            { opacity: 1, y: 0, duration: 0.5, scrollTrigger: {
                 trigger: element,
                 start: "top 80%",
                 end: "top 30%",
