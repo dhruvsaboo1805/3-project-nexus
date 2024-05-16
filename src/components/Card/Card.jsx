@@ -5,21 +5,29 @@ import gsap from "gsap";
 
 const Card = ({ title, description, image, id, forHomePage }) => {
     const cardRef = useGSAP((element) => {
-        gsap.fromTo(element, 
-            { opacity: 0, y: 50 }, 
-            { opacity: 1, y: 0, duration: 2, scrollTrigger: {
+        const isMobile = window.innerWidth <= 767;
+        const animationConfig = {
+            opacity: 0,
+            y: 50,
+        };
+        const animationTo = {
+            opacity: 1,
+            y: 0,
+            duration: isMobile ? 1 : 2,
+            scrollTrigger: {
                 trigger: element,
                 start: "top 80%",
-                end: "top 30%",
+                end: isMobile ? "top 60%" : "top 30%",
                 scrub: true,
-            }}
-        );
+            },
+        };
+        gsap.fromTo(element, animationConfig, animationTo);
     });
 
     const imageClass = forHomePage ? "card-image-home" : "card-image-services";
 
     return (
-        <div className="card" key={id} ref={cardRef}>
+        <div className="card" key={id} ref={cardRef} style={{ willChange: "transform, opacity" }}>
             <div className="card-box">
                 <img src={image} alt={title} className={imageClass} />
                 <div className="card-heading">
