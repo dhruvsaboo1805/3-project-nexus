@@ -8,10 +8,12 @@
 }
 
 :root{
-  --darkBlue : #164B60;
-  --darklightBlue : #1B6B93;
-  --blue : #4FC0D0;
-  --green : #A2FF86;
+    --darkBlue : #164B60;
+    --darklightBlue : #1B6B93;
+    --blue : #4FC0D0;
+    --green : #A2FF86;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #F5F5F5;
+ 
 }
 
 /* .App{

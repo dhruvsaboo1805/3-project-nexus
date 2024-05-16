@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .contact-info {
@@ -67,12 +67,16 @@
     margin-bottom: 10px;
 }
 
+.footer-right{
+    width: 40%;
+}
 .feedback-form {
     background-color: #E9E6E6;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    width: 100%;
 }
 
 .feedback-form h3 {
@@ -153,8 +157,7 @@ hr {
     text-align: center;
 }
 
-
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px){
 
     .footer-wrapper {
         height: 1200px;
@@ -165,14 +168,26 @@ hr {
     }
 
 
+    .footer-right{
+        width: 60%;
+    }
+
+    .footer-left{
+        align-items: center;
+        justify-content: center;
+    }
+
     .company-details {
         margin-top: 20px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-info {
         display: flex;
         flex-direction: column;
+        margin-left: 44px;
     }
 
     .social-links {
@@ -193,8 +208,6 @@ hr {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        gap: 9px;
     }
-
-
-    
 }

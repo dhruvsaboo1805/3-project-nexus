@@ -1,5 +1,5 @@
 .about-section{
-    margin-top: 10px;
+    margin-top: -60px;
 }
 
 .left-content-about-us-page{
@@ -8,7 +8,7 @@
 
 .about-company-about-us{
     margin-top: 10px;
-    width: 50%;
+    width: 80%;
 }
 
 .about-img{
@@ -32,6 +32,10 @@
     .left-content-about-us-page{
         margin-left: 40px;
         width: 100%;
+    }
+
+    .about-company-about-us{
+        width: 80%;
     }
 
     .about-img{
@@ -64,6 +68,11 @@
     
     .about-img img{
         width: 100%;
+    }
+
+    .about-company-about-us{
+        font-size: 13px;
+        width: 80%;
     }
 
     .btnstyle{

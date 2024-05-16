@@ -41,15 +41,15 @@ const Footer = () => {
         <div className="footer-wrapper">
             <div className="footer-section">
                 <div className="footer-left">
-                    <ScrollToTop></ScrollToTop>
                     <div className="site-links">
+                        <ScrollToTop></ScrollToTop>
                         <NavLink to="/">
                             <p>Home</p>
                         </NavLink>
-                        <NavLink to="/about-us">
+                        <NavLink to="/services">
                             <p>Services</p>
                         </NavLink>
-                        <NavLink to="/services">
+                        <NavLink to="/about-us">
                             <p>About Us</p>
                         </NavLink>
                         <NavLink to="/contact">
