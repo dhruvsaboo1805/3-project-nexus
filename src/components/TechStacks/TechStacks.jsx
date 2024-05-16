@@ -10,7 +10,7 @@ import Docker from "../../assets/Docker.svg";
 import MongoDB from "../../assets/MongoDB.svg";
 import Saas from "../../assets/Saas.svg";
 import React_icon from "../../assets/React.png";
-import angular from "../../assets/Angular.png";
+// import angular from "../../assets/Angular.png";
 import aws from "../../assets/aws.png";
 import dotNet from "../../assets/dotNet.jpeg";
 
@@ -24,7 +24,7 @@ const TechStacks = () => {
           </div>
           <div className="animated-icon"> {/* Add animation to this div */}
             <img src={React_icon} alt="Tech Stack Icon" />
-            <img src={angular} alt="Tech Stack Icon" />
+            {/* <img src={angular} alt="Tech Stack Icon" /> */}
             <img src={aws} alt="Tech Stack Icon" />
             <img src={nodejs} alt="Tech Stack Icon" />
             <img src={python} alt="Tech Stack Icon" />
