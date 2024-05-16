@@ -36,8 +36,6 @@
 }
 
 .hero-img-img {
-	animation: slideFromLeft 1.5s ease-in-out forwards;
-	opacity: 0;
 	width: 85%;
 }
 
@@ -45,18 +43,6 @@
 	width: 100%;
 }
 
-
-@keyframes slideFromLeft {
-	0% {
-		transform: translateX(-100%);
-		opacity: 0;
-	}
-
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
 
 .content {
 	width: 40%;

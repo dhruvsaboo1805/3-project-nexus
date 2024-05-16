@@ -18,6 +18,7 @@
     color: rgb(206, 203, 203);
     font-weight: 400;
     font-size: 12px;
+    opacity: 0; /* Initial opacity set to 0 for animations */
 }
 
 .service-heading {
@@ -27,6 +28,7 @@
     font-weight: 700;
     margin-top: 5px;
     letter-spacing: 2px;
+    opacity: 0; /* Initial opacity set to 0 for animations */
 }
 
 .cards {
@@ -57,7 +59,7 @@
 
 .service-card:hover {
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .customer-card,

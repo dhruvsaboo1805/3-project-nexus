@@ -1,14 +1,25 @@
 import React from "react";
 import "./Hero.css";
 import hero_img from "../../assets/hero_img.png";
+import useGSAP from "../../hooks/useGsap";
+import gsap from "gsap";
+
 const Hero = () => {
-    return(
+    const imgRef = useGSAP((element) => {
+        gsap.fromTo(element, { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 1.5 });
+    });
+
+    const contentRef = useGSAP((element) => {
+        gsap.fromTo(element, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5, delay: 0.5 });
+    });
+
+    return (
         <div className="hero">
             <div className="hero-content">
-                <div className="hero-img">
-                    <img src={hero_img} alt="" className="hero-img-img"/>
+                <div className="hero-img" ref={imgRef}>
+                    <img src={hero_img} alt="Hero" className="hero-img-img" />
                 </div>
-                <div className="content">
+                <div className="content" ref={contentRef}>
                     <div className="main-content">
                         <h2>Empowering Your Digital Future</h2>
                     </div>
@@ -22,7 +33,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Hero;
