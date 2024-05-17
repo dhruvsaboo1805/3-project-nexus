@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# React Software Company Website Techy Software
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Techy Software project repository! This project showcases a comprehensive React application featuring various sections such as Home, About Us, Services, Contact Us, and more. It also integrates email sending functionality via EmailJS and implements smooth navigation and scrolling animations for an enhanced user experience.
 
-## Available Scripts
+## 🚀 Live Demo <a name="live-demo"></a>
 
-In the project directory, you can run:
+[Live Demo](https://3-project-nexus-techy-software.vercel.app/) 
 
-### `npm start`
+### Tech Stack <a name="tech-stack"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <summary>Front-End</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React-js</a></li>
+    <li><a href="https://reactrouter.com/en/main">React-Router-DOM</a></li>
+    <li><a href="https://gsap.com/docs/v3/">GSAP CSS ANIMATIONS</a></li>
+  </ul>
+  <summary>Back-End</summary>
+   <li><a href="https://www.emailjs.com/docs/">Email-Js</a></li>
+  <ul>
+    
+  </ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+<h3>Home Page:</h3>
+<p>Introduces Techy Software and highlights its key services.</p>
 
-### `npm test`
+<h3>About Us Page:</h3>
+<p>Provides information about Techy Software, its mission, and values.</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Services Page:</h3>
+<p>Details the services offered by Techy Software, including web development, mobile app development, and UI/UX design.</p>
 
-### `npm run build`
+<h3>Contact Us Page:</h3>
+<p>Allows users to submit inquiries and get in touch with Techy Software.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h3>Smooth Navigation:</h3>
+<p>Seamless transition between pages with smooth animations.</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Responsive Design:</h3>
+<p>The website is designed to be fully responsive, ensuring optimal viewing experience across devices.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2>User Interface</h2>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 💻 Getting Started <a name="getting-started"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In order to run this project you need:
 
-### Code Splitting
+* GitHub
+* Code Editor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Setup
 
-### Analyzing the Bundle Size
+Clone this repository to your desired folder:
+<code>
+  git clone https://github.com/dhruvsaboo1805/3-project-nexus.git
+</code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install this project with:
 
-### Advanced Configuration
+* npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Coming soon
 
-### `npm run build` fails to minify
+### Deployment <a name="deployment"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can deploy this project using: GitHub Pages or render or vercel or netlify
+
+
+### Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
