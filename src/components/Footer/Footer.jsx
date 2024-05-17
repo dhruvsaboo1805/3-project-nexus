@@ -1,22 +1,15 @@
-import React from "react";
+import React, { lazy, useEffect, useRef } from "react";
 import "./Footer.css";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
 import company_logo from "../../assets/company_logo.png";
-import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
-import { NavLink } from "react-router-dom";
-import ScrollToTop from "../ScrollToTop";
 
 const Footer = () => {
-
     const form = useRef();
-    // problem on process.env
-    // const service_id = process.env.REACT_APP_SERVICE_ID;
-    // const public_id = process.env.REACT_APP_PUBLIC_ID;
-    // const feedback_template_id = process.env.REACT_APP_FEEDBACK_TEMPLATE_ID;
+
 
     const handleFeedbackSumbit = (e) => {
         e.preventDefault();
@@ -37,24 +30,16 @@ const Footer = () => {
             );
         e.target.reset();
     }
+
     return (
-        <div className="footer-wrapper">
+        <div className="footer-wrapper" >
             <div className="footer-section">
                 <div className="footer-left">
                     <div className="site-links">
-                        <ScrollToTop></ScrollToTop>
-                        <NavLink to="/">
-                            <p>Home</p>
-                        </NavLink>
-                        <NavLink to="/services" >
-                            <p>Services</p>
-                        </NavLink>
-                        <NavLink to="/about-us">
-                            <p>About Us</p>
-                        </NavLink>
-                        <NavLink to="/contact">
-                            <p>Contact Us</p>
-                        </NavLink>
+                        <a href="/" loading={lazy} >Home</a>
+                        <a href="/services" loading={lazy}>Services</a>
+                        <a href="/about-us" loading={lazy}>About Us</a>
+                        <a href="/contact" loading={lazy} >Contact Us</a>
                     </div>
                     <div className="company-details">
                         <div className="company-logo">
@@ -89,7 +74,7 @@ const Footer = () => {
                                 <label htmlFor="message">Message:</label>
                                 <textarea id="message" name="message" rows="4" required></textarea>
                             </div>
-                            <button type="submit" value="Send" >Submit</button>
+                            <button type="submit" value="Send">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -99,7 +84,7 @@ const Footer = () => {
                 <p><FaRegCopyright /> 2024 Techy Software. All Rights Reserved.</p>
             </div>
         </div>
-    )
+    );
 }
 
 export default Footer;

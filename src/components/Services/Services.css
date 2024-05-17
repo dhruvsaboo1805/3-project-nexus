@@ -1,4 +1,3 @@
-/* Default styles */
 .service-section {
     width: 100%;
     height: 630px;
@@ -18,7 +17,6 @@
     color: rgb(206, 203, 203);
     font-weight: 400;
     font-size: 12px;
-    opacity: 0; /* Initial opacity set to 0 for animations */
 }
 
 .service-heading {
@@ -28,7 +26,6 @@
     font-weight: 700;
     margin-top: 5px;
     letter-spacing: 2px;
-    opacity: 0; /* Initial opacity set to 0 for animations */
 }
 
 .cards {
@@ -45,7 +42,7 @@
 }
 
 .service-card {
-    width: calc(50% - 120px); /* Adjust width as needed */
+    width: calc(50% - 120px); 
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -53,8 +50,9 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    position: relative; /* Add position relative to contain the overlay */
+    position: relative; 
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .service-card:hover {
@@ -64,7 +62,7 @@
 
 .customer-card,
 .country-card {
-    background-color: #fff; /* Fallback color in case image fails to load */
+    background-color: #fff; 
 }
 
 .customer-card::before,
@@ -90,14 +88,14 @@
 }
 
 .card-box1 {
-    position: relative; /* Add position relative to contain the overlay */
-    z-index: 10; /* Ensure text appears above the overlay */
+    position: relative;
+    z-index: 10; 
     padding: 20px;
 }
 
 .card-box1 h3 {
     font-size: 24px;
-    margin-bottom: 5px; /* Remove default margin */
+    margin-bottom: 5px; 
 }
 
 .card-box1 p {
@@ -107,19 +105,18 @@
 
 /* Media queries for responsiveness */
 
-/* For screens smaller than 767px (e.g., smartphones) */
 @media screen and (max-width: 767px) {
     .service-section {
-        height: auto; /* Auto height for smaller screens */
-        margin-top: 80px; /* Adjusted margin-top */
+        height: auto; 
+        margin-top: 80px; 
     }
 
     .service-heading {
-        font-size: 24px; /* Decreased font size for smaller screens */
+        font-size: 24px; 
     }
 
     .service-card {
-        width: calc(100% - 40px); /* Full width for service cards on smaller screens */
+        width: calc(100% - 40px); 
         margin-bottom: 30px;
         flex-direction: column;
     }
@@ -135,14 +132,9 @@
     }
 }
 
-/* For screens between 768px and 1023px (e.g., tablets) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .service-card {
-        width: calc(50% - 40px); /* Adjusted width for tablets */
+        width: calc(50% - 40px); 
     }
 }
 
-/* For screens larger than 1023px (e.g., desktops) */
-@media screen and (min-width: 1024px) {
-    /* Add any specific styles for larger screens here */
-}

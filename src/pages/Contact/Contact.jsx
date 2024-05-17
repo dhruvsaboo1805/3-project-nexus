@@ -5,6 +5,8 @@ import Hero_contact from "../../components/HeroSection/Hero_contact";
 import Footer from "../../components/Footer/Footer";
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import useGSAP from "../../hooks/useGsap";
+import gsap from "gsap";
 
 const Contact = () => {
     const [isContactPage, setContactPage] = useState(true);
@@ -14,6 +16,19 @@ const Contact = () => {
     // const contact_template_id = process.env.REACT_APP_CONTACT_US_TEMPLATE_ID;
     // console.log(process.env);
     // console.log(process.env);
+
+    const formRef = useGSAP((element) => {
+        gsap.fromTo(element, 
+            { opacity: 0, x: 100 }, 
+            { opacity: 1, x: 0, duration: 1.5, scrollTrigger: {
+                trigger: element,
+                start: "top 80%",
+                end: "top 30%",
+                scrub: true,
+            }}
+        );
+    });
+
 
     const form = useRef();
 
@@ -41,7 +56,7 @@ const Contact = () => {
         <div>
             <Navbar></Navbar>
             <Hero_contact isContactPage={isContactPage}></Hero_contact>
-            <div className="contact-form-container">
+            <div className="contact-form-container" ref={formRef}>
                 <h2 className="contact-main-heading">Drop Us a Message</h2>
                 <form className="contact-form" onSubmit={handleSubmit} ref={form}>
                     <div className="form-group">

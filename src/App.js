@@ -5,12 +5,10 @@ import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import './App.css';
 import './index.css';
-import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className='App'>
-      <ScrollToTop></ScrollToTop>
        <Routes>
         <Route path = "/" element = {<Home></Home>}></Route>
         <Route path = "/about-us" element = {<Aboutus></Aboutus>}></Route>
