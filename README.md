@@ -41,9 +41,21 @@ Welcome to the Techy Software project repository! This project showcases a compr
 
 <h2>User Interface</h2>
 
+![Screenshot 2024-05-17 192237](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/a66a00d0-d990-4d87-a671-aaaa171afcf7)
 
+![Screenshot 2024-05-17 192250](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/21985f60-5025-47d8-94c7-04d7627dae7d)
 
+![Screenshot 2024-05-17 192310](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/b4b67c00-5000-49fe-be34-93b08a4964b1)
 
+![Screenshot 2024-05-17 192325](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/2abf2846-4029-49e6-a603-751b39185258)
+
+![Screenshot 2024-05-17 192338](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/3272b258-444c-4672-821d-f1667041b18f)
+
+![Screenshot 2024-05-17 192355](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/609e350b-139c-4684-b480-33491675bada)
+
+![Screenshot 2024-05-17 192450](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/304e8c19-d0d3-4896-9c45-12cc48cd3235)
+
+![Screenshot 2024-05-17 192505](https://github.com/dhruvsaboo1805/3-project-nexus/assets/104023753/41718be4-a367-4515-b7ea-2804998ac6c7)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
